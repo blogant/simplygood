@@ -242,7 +242,7 @@
             <div class="footer-col col-md-4">
               <h5>Contact us</h5>
               <input id="write" type="checkbox" class="write"><label for="write" class="btn">Write us a message</label>
-              <form method="POST" class="contact-form">
+              <form method="POST" id="contact-form" class="contact-form">
                 <input type="text" name="name" placeholder="Name">
                 <input type="email" name="_replyto" placeholder="Email">
                 <textarea name="message" rows="4" placeholder="Message"></textarea>
@@ -250,7 +250,7 @@
                 <input type="hidden" name="_next" value="http://simplygood.software/#contact">
               </form>
               <script>
-                var contactform =  document.getElementById('contactform');
+                var contactform =  document.getElementById('contact-form');
                 contactform.setAttribute('action', '//formspree.io/' + 'boris' + '@' + 'blogant' + '.' + 'net');
               </script>
               <p>
