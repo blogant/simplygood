@@ -508,6 +508,7 @@ textarea:focus {
 }
 .contact-form > * {
   width: 100%;
+  max-width: 100%;
 }
 .contact-form .btn {
   margin-bottom: 8px;
