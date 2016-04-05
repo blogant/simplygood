@@ -241,7 +241,14 @@
             </div>
             <div class="footer-col col-md-4">
               <h5>Contact us</h5>
-              <a href="mailto://doina@simplygood.software">doina@simplygood.software</a>
+              <input id="write" type="checkbox" class="write"><label for="write" class="btn">Write us a message</label>
+              <form action="https://formspree.io/boris@blogant.net" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="_replyto" placeholder="Email">
+                <textarea rows="4" placeholder="Message"></textarea>
+                <input type="submit" value="Send" class="btn">
+                <input type="hidden" name="_next" value="http://simplygood.software/#contact">
+              </form>
               <p>
                 Email us to tell a crazy story, ask a question, send pictures of corgis or request a quote.
               </p>

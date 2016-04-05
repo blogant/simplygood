@@ -75,6 +75,20 @@ ul, ol {
 ul li {
   list-style: none; }
 
+input,
+textarea {
+  outline: none;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border: 2px solid #e8ecee;
+  border-radius: 2px;
+  transition: border-color .2s;
+}
+input:focus,
+textarea:focus {
+  border-color: #a55502;
+}
+
 .section {
   padding-top: 70px; }
 
@@ -476,6 +490,28 @@ ul li {
     color: #a55502;
     font-size: 11px;
     margin: 0 2px; }
+.write {
+  position: absolute;
+  left: -9999px;
+}
+.write + label {
+  margin-bottom: 8px;
+}
+.write:checked ~ .contact-form {
+  display: block;
+}
+.write:checked + label {
+  display: none;
+}
+.contact-form {
+  display: none;
+}
+.contact-form > * {
+  width: 100%;
+}
+.contact-form .btn {
+  margin-bottom: 8px;
+}
 
 /* ==========================================================================
 	$Utilities
