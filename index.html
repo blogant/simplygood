@@ -243,9 +243,9 @@
               <h5>Contact us</h5>
               <input id="write" type="checkbox" class="write"><label for="write" class="btn">Write us a message</label>
               <form method="POST" id="contact-form" class="contact-form">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="_replyto" placeholder="Email">
-                <textarea name="message" rows="4" placeholder="Message"></textarea>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="_replyto" placeholder="Email" required>
+                <textarea name="message" rows="4" placeholder="Message" required></textarea>
                 <input type="submit" value="Send" class="btn">
                 <input type="hidden" name="_next" value="http://simplygood.software/#confirmation">
               </form>
@@ -254,7 +254,7 @@
               </p>
               <script>
                 var contactform =  document.getElementById('contact-form');
-                contactform.setAttribute('action', '//formspree.io/' + 'boris' + '@' + 'blogant' + '.' + 'net');
+                contactform.setAttribute('action', '//formspree.io/' + 'doina' + '@' + 'simplygood' + '.' + 'software');
                 (function() {
                   if(window.location.href.indexOf('confirmation') > -1) {
                     document.getElementById('confirmation').textContent = "Your message has been sent.";
